@@ -11,8 +11,7 @@ wget -O tmux-${TMUX_VERSION}.tar.gz  "http://downloads.sourceforge.net/project/t
 wget https://github.com/downloads/libevent/libevent/libevent-2.0.21-stable.tar.gz
 wget ftp://ftp.gnu.org/gnu/ncurses/ncurses-5.9.tar.gz
  
- 
-sudo yum -y install glibc-static.x86_64
+[[ -f "/etc/redhat-release" ]] || sudo yum -y install glibc-static.x86_64 || su -c "yum -y install glibc-static.x86_64 "
 
 tar xvzf libevent-2.0.21-stable.tar.gz
 cd libevent-2.0.21-stable
