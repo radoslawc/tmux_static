@@ -26,7 +26,7 @@ cd ..
  
 tar xvzf ncurses-5.9.tar.gz
 cd ncurses-5.9
-./configure --without-ada --without-cxx --without-progs --without-manpages --disable-db-install --without-tests --with-default-terminfo-dir=/usr/share/terminfo --with-terminfo-dirs="/etc/terminfo:/lib/terminfo:/usr/share/terminfo" --prefix=$HOME/local
+./configure --without-ada --without-cxx --without-manpages --disable-db-install --without-tests --with-default-terminfo-dir=/usr/share/terminfo --with-terminfo-dirs="/etc/terminfo:/lib/terminfo:/usr/share/terminfo" --prefix=$HOME/local
 make
 make install
 cd ..
